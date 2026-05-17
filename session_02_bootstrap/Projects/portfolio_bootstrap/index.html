@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyễn Quang Thực Portfolio Bootstrap</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: white;
+        }
+
+        .navbar {
+            background: #111827;
+        }
+
+        .navbar-brand {
+            font-size: 26px;
+            font-weight: bold;
+            color: #38bdf8 !important;
+        }
+
+        .nav-link {
+            color: white !important;
+            transition: 0.3s;
+        }
+
+        .nav-link:hover {
+            color: #38bdf8 !important;
+        }
+
+        .hero {
+            min-height: 100vh;
+            background: linear-gradient(to right, #0f172a, #1e293b);
+        }
+
+        .hero-img {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #38bdf8;
+        }
+
+        .btn-custom {
+            background: #38bdf8;
+            color: white;
+            border-radius: 10px;
+            padding: 14px 30px;
+            text-decoration: none;
+            transition: 0.3s;
+            border: none;
+        }
+
+        .btn-custom:hover {
+            background: #0284c7;
+            color: white;
+        }
+
+        section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            color: #38bdf8;
+            font-weight: bold;
+            margin-bottom: 40px;
+        }
+
+        .about-img {
+            width: 100%;
+            border-radius: 20px;
+        }
+
+        .progress {
+            height: 15px;
+            background: #1e293b;
+            border-radius: 20px;
+        }
+
+        .progress-bar {
+            background: #38bdf8;
+        }
+
+        .portfolio-card {
+            background: #1e293b;
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: 0.3s;
+            color: white;
+        }
+
+        .portfolio-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .portfolio-card img {
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .contact-card {
+            background: #1e293b;
+            border: none;
+            border-radius: 20px;
+            color: white;
+        }
+
+        .form-control {
+            border: none;
+            border-radius: 10px;
+            padding: 12px;
+        }
+
+        footer {
+            background: #111827;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 34px;
+            }
+
+            .hero-img {
+                width: 180px;
+                height: 180px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Nguyễn Quang Thực</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarPortfolio">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarPortfolio">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">Giới thiệu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#skills" class="nav-link">Kỹ năng</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#portfolio" class="nav-link">Dự án</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Liên hệ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="blog.html" class="nav-link">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <!-- Hero Section Bootstrap -->
+        <section class="hero d-flex align-items-center justify-content-center text-center">
+            <div class="container">
+                <img src="https://i.imgur.com/3ZQ3Z6K.jpeg" alt="Nguyễn Quang Thực" class="hero-img mb-4">
+
+                <h1 class="display-4 fw-bold mb-3">
+                    Xin chào, tôi là Nguyễn Quang Thực
+                </h1>
+
+                <p class="lead text-light opacity-75 mb-4">
+                    Front-End Developer | UI Designer | Student
+                </p>
+
+                <a href="#portfolio" class="btn btn-custom">
+                    Xem dự án
+                </a>
+            </div>
+        </section>
+
+        <!-- About Section Bootstrap Grid -->
+        <section id="about">
+            <div class="container">
+                <div class="row align-items-center g-5">
+
+                    <div class="col-lg-6">
+                        <img src="https://i.imgur.com/FY6hC6A.jpeg" alt="About" class="about-img">
+                    </div>
+
+                    <div class="col-lg-6">
+                        <h2 class="section-title">Giới thiệu bản thân</h2>
+
+                        <p class="lead">
+                            Tôi là Nguyễn Quang Thực, yêu thích lập trình web và thiết kế giao diện hiện đại.
+                        </p>
+
+                        <p class="text-light opacity-75">
+                            Có kinh nghiệm HTML, CSS, JavaScript và đang học React, NodeJS.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section Bootstrap Progress -->
+        <section id="skills" class="bg-dark">
+            <div class="container">
+                <h2 class="section-title text-center">Kỹ năng</h2>
+
+                <div class="row g-4">
+
+                    <div class="col-md-6">
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="fw-semibold">HTML</span>
+                                <span class="text-info fw-semibold">95%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 95%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="fw-semibold">CSS</span>
+                                <span class="text-info fw-semibold">90%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="fw-semibold">JavaScript</span>
+                                <span class="text-info fw-semibold">85%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="fw-semibold">ReactJS</span>
+                                <span class="text-info fw-semibold">75%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section Bootstrap Cards + Grid -->
+        <section id="portfolio">
+            <div class="container">
+                <h2 class="section-title text-center">Dự án của tôi</h2>
+
+                <div class="row g-4">
+
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card portfolio-card h-100">
+                            <img src="https://picsum.photos/500/300?random=1" class="card-img-top" alt="Website bán hàng">
+                            <div class="card-body">
+                                <h3 class="card-title h5">Website bán hàng</h3>
+                                <p class="card-text text-light opacity-75">HTML - CSS - JS</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card portfolio-card h-100">
+                            <img src="https://picsum.photos/500/300?random=2" class="card-img-top" alt="Ứng dụng quản lý">
+                            <div class="card-body">
+                                <h3 class="card-title h5">Ứng dụng quản lý</h3>
+                                <p class="card-text text-light opacity-75">ReactJS</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card portfolio-card h-100">
+                            <img src="https://picsum.photos/500/300?random=3" class="card-img-top" alt="Portfolio cá nhân">
+                            <div class="card-body">
+                                <h3 class="card-title h5">Portfolio cá nhân</h3>
+                                <p class="card-text text-light opacity-75">Responsive Design</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section Bootstrap Form -->
+        <section id="contact" class="bg-dark">
+            <div class="container">
+                <div class="card contact-card p-4 p-md-5">
+                    <div class="row g-5 align-items-center">
+
+                        <div class="col-lg-6">
+                            <h2 class="section-title">Liên hệ</h2>
+
+                            <p>
+                                <i class="bi bi-envelope-fill text-info me-2"></i>
+                                Email: nguyenquangthuc@gmail.com
+                            </p>
+
+                            <p>
+                                <i class="bi bi-geo-alt-fill text-info me-2"></i>
+                                Địa chỉ: Hà Nội, Việt Nam
+                            </p>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <form>
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" placeholder="Tên của bạn">
+                                </div>
+
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" placeholder="Email">
+                                </div>
+
+                                <div class="mb-3">
+                                    <textarea rows="5" class="form-control" placeholder="Nội dung"></textarea>
+                                </div>
+
+                                <button type="submit" class="btn btn-custom">
+                                    Gửi tin nhắn
+                                </button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-4">
+        <div class="container">
+            <h3 class="h5 text-info">Nguyễn Quang Thực</h3>
+            <p class="mb-0 text-light opacity-75">© 2026 All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

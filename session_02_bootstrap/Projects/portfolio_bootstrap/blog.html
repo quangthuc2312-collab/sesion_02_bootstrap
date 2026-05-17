@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leadership Blog | Portfolio Bootstrap</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom-theme.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/comments.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top border-bottom">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-uppercase" href="index.html">My Portfolio</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto text-uppercase small fw-semibold">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#philosophy">Philosophy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#advocate">Advocate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#innovation">Innovation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-primary" href="#blog">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Header -->
+    <header class="blog-hero text-center">
+        <div class="container">
+            <p class="text-uppercase text-primary fw-bold mb-3">Leadership Journal</p>
+            <h1 class="display-4 fw-bold mb-3">Stories, Values & Learning Journey</h1>
+            <p class="lead text-muted mx-auto">
+                A personal blog about technology, leadership, community, and continuous growth.
+            </p>
+        </div>
+    </header>
+
+    <!-- Blog Layout -->
+    <section id="blog" class="py-section">
+        <div class="container">
+            <div class="row g-5">
+
+                <!-- Main Content -->
+                <div class="col-lg-8">
+
+                    <!-- Blog Post 1 -->
+                    <article class="card blog-card mb-4">
+                        <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1200&auto=format&fit=crop" class="card-img-top" alt="Workspace">
+                        <div class="card-body p-4">
+                            <span class="badge bg-primary">Technology</span>
+                            <h3 class="card-title mt-3">Building a Portfolio with Bootstrap</h3>
+                            <p class="card-text text-muted">
+                                <small>By Student Author • Jan 15, 2026 • 5 min read</small>
+                            </p>
+                            <p class="card-text">
+                                A portfolio is more than a simple website. It shows how you organize ideas,
+                                present your skills, and communicate your personal identity through design.
+                            </p>
+                            <a href="#" class="btn btn-outline-primary">Read More</a>
+                        </div>
+                    </article>
+
+                    <!-- Blog Post 2 -->
+                    <article class="card blog-card mb-4" id="philosophy">
+                        <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=1200&auto=format&fit=crop" class="card-img-top" alt="Team discussion">
+                        <div class="card-body p-4">
+                            <span class="badge bg-success">Leadership</span>
+                            <h3 class="card-title mt-3">My Philosophy of Growth</h3>
+                            <p class="card-text text-muted">
+                                <small>By Student Author • Jan 20, 2026 • 4 min read</small>
+                            </p>
+                            <p class="card-text">
+                                Growth begins when we are willing to learn from feedback, work with others,
+                                and turn challenges into opportunities for improvement.
+                            </p>
+                            <a href="#" class="btn btn-outline-primary">Read More</a>
+                        </div>
+                    </article>
+
+                    <!-- Blog Post 3 -->
+                    <article class="card blog-card mb-4" id="innovation">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&auto=format&fit=crop" class="card-img-top" alt="Innovation meeting">
+                        <div class="card-body p-4">
+                            <span class="badge bg-warning text-dark">Innovation</span>
+                            <h3 class="card-title mt-3">Using Design to Solve Problems</h3>
+                            <p class="card-text text-muted">
+                                <small>By Student Author • Jan 25, 2026 • 6 min read</small>
+                            </p>
+                            <p class="card-text">
+                                Good design is not only about appearance. It helps users find information,
+                                understand content quickly, and interact with a website more comfortably.
+                            </p>
+                            <a href="#" class="btn btn-outline-primary">Read More</a>
+                        </div>
+                    </article>
+
+                    <!-- Comment Section -->
+                    <section class="mt-5" id="advocate">
+
+                        <!-- Comment Form -->
+                        <div class="card mb-4">
+                            <div class="card-header bg-white">
+                                <h5 class="mb-0">Leave a Comment</h5>
+                            </div>
+                            <div class="card-body">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="name" class="form-label">Name</label>
+                                            <input type="text" class="form-control" id="name" required>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="email" class="form-label">Email</label>
+                                            <input type="email" class="form-control" id="email" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="comment" class="form-label">Comment</label>
+                                        <textarea class="form-control" id="comment" rows="4" required></textarea>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-primary">
+                                        Post Comment
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <!-- Comments Display -->
+                        <div class="comments-section">
+                            <h5 class="mb-4">3 Comments</h5>
+
+                            <!-- Parent Comment 1 -->
+                            <div class="comment mb-4">
+                                <div class="d-flex">
+                                    <img src="https://i.pravatar.cc/100?img=12" class="rounded-circle me-3" alt="Avatar">
+                                    <div class="flex-grow-1">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h6 class="mb-0">John Doe</h6>
+                                            <small class="text-muted">2 hours ago</small>
+                                        </div>
+                                        <p class="mb-2">
+                                            Great article! The Bootstrap layout is clean and easy to understand.
+                                        </p>
+                                        <button class="btn btn-sm btn-link text-decoration-none px-0">
+                                            <i class="bi bi-reply"></i> Reply
+                                        </button>
+
+                                        <!-- Nested Reply -->
+                                        <div class="comment reply ms-5 mt-3">
+                                            <div class="d-flex">
+                                                <img src="https://i.pravatar.cc/100?img=32" class="rounded-circle me-3" alt="Avatar">
+                                                <div class="flex-grow-1">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <h6 class="mb-0">Author</h6>
+                                                        <small class="text-muted">1 hour ago</small>
+                                                    </div>
+                                                    <p class="mb-2">
+                                                        Thank you! I wanted the layout to feel simple and readable.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Parent Comment 2 -->
+                            <div class="comment mb-4">
+                                <div class="d-flex">
+                                    <img src="https://i.pravatar.cc/100?img=45" class="rounded-circle me-3" alt="Avatar">
+                                    <div class="flex-grow-1">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h6 class="mb-0">Emily Smith</h6>
+                                            <small class="text-muted">Yesterday</small>
+                                        </div>
+                                        <p class="mb-2">
+                                            I like how the sidebar stays visible on desktop. It makes navigation easier.
+                                        </p>
+                                        <button class="btn btn-sm btn-link text-decoration-none px-0">
+                                            <i class="bi bi-reply"></i> Reply
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Parent Comment 3 -->
+                            <div class="comment mb-4">
+                                <div class="d-flex">
+                                    <img src="https://i.pravatar.cc/100?img=8" class="rounded-circle me-3" alt="Avatar">
+                                    <div class="flex-grow-1">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h6 class="mb-0">Michael Lee</h6>
+                                            <small class="text-muted">3 days ago</small>
+                                        </div>
+                                        <p class="mb-2">
+                                            The teal color palette feels fresh and different from default Bootstrap.
+                                        </p>
+                                        <button class="btn btn-sm btn-link text-decoration-none px-0">
+                                            <i class="bi bi-reply"></i> Reply
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="col-lg-4">
+                    <aside class="sticky-top sidebar-sticky">
+
+                        <!-- Search Widget -->
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h5 class="card-title">Search</h5>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search...">
+                                    <button class="btn btn-primary" type="button">Go</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Categories Widget -->
+                        <div class="card mb-4">
+                            <div class="card-header bg-white">
+                                <h5 class="mb-0">Categories</h5>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Technology
+                                    <span class="badge bg-primary rounded-pill">12</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Leadership
+                                    <span class="badge bg-primary rounded-pill">8</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Design
+                                    <span class="badge bg-primary rounded-pill">6</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Community
+                                    <span class="badge bg-primary rounded-pill">5</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Recent Posts Widget -->
+                        <div class="card mb-4">
+                            <div class="card-header bg-white">
+                                <h5 class="mb-0">Recent Posts</h5>
+                            </div>
+                            <div class="card-body">
+
+                                <div class="d-flex mb-3">
+                                    <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=120&auto=format&fit=crop" class="rounded" width="60" height="60" alt="Post thumbnail">
+                                    <div class="ms-3">
+                                        <h6 class="mb-1">Building a Portfolio</h6>
+                                        <small class="text-muted">Jan 15, 2026</small>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex mb-3">
+                                    <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=120&auto=format&fit=crop" class="rounded" width="60" height="60" alt="Post thumbnail">
+                                    <div class="ms-3">
+                                        <h6 class="mb-1">Philosophy of Growth</h6>
+                                        <small class="text-muted">Jan 20, 2026</small>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex">
+                                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=120&auto=format&fit=crop" class="rounded" width="60" height="60" alt="Post thumbnail">
+                                    <div class="ms-3">
+                                        <h6 class="mb-1">Design & Problem Solving</h6>
+                                        <small class="text-muted">Jan 25, 2026</small>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Tags Widget -->
+                        <div class="card mb-4">
+                            <div class="card-header bg-white">
+                                <h5 class="mb-0">Tags</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex flex-wrap gap-2">
+                                    <span class="badge bg-secondary">HTML</span>
+                                    <span class="badge bg-secondary">CSS</span>
+                                    <span class="badge bg-secondary">Bootstrap</span>
+                                    <span class="badge bg-secondary">JavaScript</span>
+                                    <span class="badge bg-secondary">Leadership</span>
+                                    <span class="badge bg-secondary">Portfolio</span>
+                                    <span class="badge bg-secondary">UI Design</span>
+                                    <span class="badge bg-secondary">Growth</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </aside>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-white border-top text-center">
+        <div class="container">
+            <p class="mb-0 text-muted">© 2026 My Portfolio Blog. Built with Bootstrap 5.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
